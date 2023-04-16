@@ -1,0 +1,4 @@
+days = {'{:03d}'.format(i) for i in range(1, 362)}
+sort = sorted(days)
+quote = '{' + ','.join(['\'' + s + '\'' for s in sort]) + '}'
+print(quote)
